@@ -18,7 +18,7 @@ export function Ingredients(){
         $("#dataContainer").html(html);
     }
     function getIngredients(){
-        LoadApi(`list.php?i=list`,display,'meals',false,false,20);
+        LoadApi(`list.php?i=list`,display,'meals',false,false);
     }
     function getMeals(id){
         LoadApi(`filter.php?i=${id}`,Meal().display,'meals',false,false,20);
