@@ -20,7 +20,7 @@ export function Categories(){
         $("#dataContainer").html(html);
     }
     function getCategories(){
-        LoadApi(`categories.php`,display,'categories',false,false,20);
+        LoadApi(`categories.php`,display,'categories',false,false);
     }
     function getMeals(id){
         LoadApi(`filter.php?c=${id}`,Meal().display,'meals',false,false,20);
