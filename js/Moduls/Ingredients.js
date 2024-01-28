@@ -18,7 +18,7 @@ export function Ingredients(){
         $("#dataContainer").html(html);
     }
     function getIngredients(){
-        // if you can't to show the all Ingredients uncomment the next line
+        // if you want to show the all Ingredients uncomment the next line
         //LoadApi(`list.php?i=list`,display,'meals',false,false);
         //but I notice that the viewed Ingredients in the demo are 20 so I passed the count 20 to this
         LoadApi(`list.php?i=list`,display,'meals',false,false,20);
