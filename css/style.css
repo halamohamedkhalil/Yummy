@@ -1,0 +1,46 @@
+/* General */
+:root{
+    --Background:#0D0D0D;
+}
+body{
+    background-color: var(--Background);
+    color: #f9f6f6 !important;
+}
+.cursorPointer{cursor: pointer;}
+/* End General */
+
+/* Loading */
+.loading {
+    z-index: 999;
+    display: flex;
+}
+.innerLoading{
+    z-index: 9;
+    background-color: var(--Background);
+    display: flex;
+}
+/* End Loading */
+
+/* Nav */
+.sideNav{z-index: 99;}
+.navContent{background: var(--Background);}
+.logo{
+    width: 50px;
+}
+/* End Nav */
+
+/* Meal */
+.meal .layer,.category .layer{
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: #f9f6f6ca;
+    transition: all .5s ease-in-out;
+}
+.meal:hover .layer,.category:hover .layer{
+    top: 0;
+}
+/* End Meal */
+
+/* contact */
+.contact .alert{display: none;}
