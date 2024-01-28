@@ -17,7 +17,7 @@ export function Areas(){
         $("#dataContainer").html(html);
     }
     function getAreas(){
-        LoadApi(`list.php?a=list`,display,'meals',false,false,20);
+        LoadApi(`list.php?a=list`,display,'meals',false,false);
     }
     function getMeals(id){
         LoadApi(`filter.php?a=${id}`,Meal().display,'meals',false,false,20);
