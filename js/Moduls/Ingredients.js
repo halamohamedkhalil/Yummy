@@ -10,7 +10,7 @@ export function Ingredients(){
             <div class="ingredient text-center rounded-2 cursorPointer" data-id="${ingredient.strIngredient}">
                 <i class="fa-solid fa-drumstick-bite fa-4x"></i>
                 <h3>${ingredient.strIngredient}</h3>
-                <p>${ingredient.strDescription?ingredient.strDescription.split(" ").slice(0,20).join(" "):""}</p>
+                <p>${ingredient.strDescription==""? ingredient.strDescription.split(" ").slice(0,20).join(" "):""}</p>
             </div>
         </div>
             `
