@@ -5,7 +5,7 @@ export function Categories(){
     function display(data){
         let html ="";
         $.each(data,function(key,category){
-
+console.log(category.strCategoryDescription)
             html+= ` <div class="col-md-3">
             <div class="category position-relative overflow-hidden rounded-2 cursorPointer" data-id="${category.strCategory}">
                 <img src="${category.strCategoryThumb}" alt="${category.strCategory}" srcset="" class="w-100">
