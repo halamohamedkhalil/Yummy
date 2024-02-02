@@ -11,7 +11,7 @@ console.log(category.strCategoryDescription.split(" ").slice(0,20).join(" "))
                 <img src="${category.strCategoryThumb}" alt="${category.strCategory}" srcset="" class="w-100">
                 <div class="position-absolute text-center text-black p-2 layer">
                     <h3>${category.strCategory}</h3>
-                    <p>${category.strCategoryDescription=="" ?? category.strCategoryDescription.split(" ").slice(0,20).join(" ")}</p>
+                    <p>${category.strCategoryDescription=="" ? "": category.strCategoryDescription.split(" ").slice(0,20).join(" ")}</p>
                 </div>
             </div>
         </div>
